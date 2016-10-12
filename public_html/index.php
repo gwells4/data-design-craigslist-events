@@ -94,8 +94,27 @@
 						Needs, goals & features can either be a straight list for each persona, or a table comparing each persona against each possible need/feature/goal. This can help define a priority list for features (or the needs from which to develop features) before development starts.
 					</li>
 					<li>
-						<b>Category Checkboxes</b><br>
-						These are issues that the persona encounters, either with the existing system or because there's no existing system. These can clarify to designers exactly what the biggest issues this persona faces, and how the site can help them overcome their frustrations.
+						<b>Event Category Checkboxes</b><br>
+						<p>Some examples are:</p>
+						<ul>
+							<li>Art</li>
+							<li>Film</li>
+							<li>Career</li>
+							<li>Charitable</li>
+							<li>Competitive</li>
+							<li>Dance</li>
+							<li>Festival</li>
+							<li>Fitness & Health</li>
+							<li>Food & Drink</li>
+							<li>Free</li>
+							<li>Kid Friendly</li>
+							<li>Literary</li>
+							<li>Music</li>
+							<li>Outdoor</li>
+							<li>Sale or Promotional</li>
+							<li>Singles</li>
+							<li>Technology</li>
+						</ul>
 					</li>
 				</ol>
 
