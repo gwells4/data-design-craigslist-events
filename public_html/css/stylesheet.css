@@ -1,8 +1,11 @@
-header {
-	color: black,
-	border: groove
-}
+
 
 body {
 	color: green;
+}
+
+
+.header {
+	color: black;
+	border: groove
 }
