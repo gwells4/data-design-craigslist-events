@@ -33,15 +33,15 @@
 				<ol>
 					<li>
 						<b>Quote</b><br>
-						A 'quote' from the persona could oversimplify the persona, but it has the added advantage of giving the personas further personality.
+						<i>"I can't believe I drank my coffee before it was cool."</i>
 					</li>
 					<li>
 						<b>Description</b><br>
-						A description gives a brief summary of the persona, which often contains demographic information (sometimes going into surprisingly large amounts of detail). The description might include (among other information) their job, their technology, any pressures they're under and the situation they're in when they use the system/site.
+						<u>Hipster:</u> A person considered by themselves (and others) to be at the forefront of what's "hip". They may be either male, female, or other. The hip forefront generally includes fashion, and it may also include food & drink, music, art, and travel destinations. One's neighborhood is also very important, as the hipster considers there to be a clear line between fashionable and unfashionable neighborhoods.
 					</li>
 					<li>
 						<b>Needs</b> (of the User from the Site)<br>
-						Needs, goals & features can either be a straight list for each persona, or a table comparing each persona against each possible need/feature/goal. This can help define a priority list for features (or the needs from which to develop features) before development starts.
+						The hipster needs the most up-to-date information to pick the most hip event to attend. Enough detail needs to be included
 					</li>
 					<li>
 						<b>Frustrations</b><br>
