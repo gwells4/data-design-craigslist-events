@@ -17,7 +17,7 @@
 
 		<!-- This is the header -->
 		<header>
-			<h1>Data Design: Craigslist Events</h1>
+			<h1><u>Data Design: Craigslist Events</u></h1>
 		</header>
 
 		<!-- This is the main page content. -->
