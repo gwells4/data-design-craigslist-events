@@ -29,7 +29,7 @@
 				<h2>Persona</h2>
 
 				<img src="img/male-hipster.jpg" alt="Picture of Male Hipster for Persona">
-				<img src="img/female-hipster-annotated.jpg" alt="Picture of Male Hipster for Persona">
+				<img src="img/female-hipster-annotated.jpg" alt="Picture of Female Hipster for Persona">
 
 				<ol>
 					<li>
@@ -50,14 +50,14 @@
 					</li>
 					<li>
 						<b>Ideal Features</b><br>
-						Prompts for event poseters to input detailed information, such as:
+						Prompts for event posters to input detailed information, such as:
 						<ul>
 							<li>Date & Time</li>
-							<li>Location (Address or GPS)</li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
+							<li>Venue (Address or GPS)</li>
+							<li>Food? Non/organic? Vegetarian? Allergy-compatible?</li>
+							<li>Entertainment</li>
+							<li>Special Guests</li>
+							<li>Schedule</li>
 						</ul>
 					</li>
 					<li>
