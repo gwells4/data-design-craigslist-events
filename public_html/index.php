@@ -61,16 +61,12 @@
 						</ul>
 					</li>
 					<li>
-						<b>Information Desired</b><br>
-						Any information the persona needs when trying to do their goal. These help designers understand the key information needed to communicate to users.
-					</li>
-					<li>
-						<b>Behaviors</b><br>
-						These are the typical behaviours the persona exhibits. They're usually only shown if the personas different behaviors lead to different requirements for the system.
-					</li>
-					<li>
 						<b>Scenarios</b><br>
-						These are sample use cases the persona may do. They can be based on either their goals or their use of an existing system. This can clarify exactly how a system will be used.
+						<ol>
+							<li>The fridge is empty, and the hipster needs to know where a food event may be going on.</li>
+							<li>The hipster is planning their evening activities. What's happening, tonight?</li>
+							<li>It's a lazy night, and the hipster doesn't want to drive. What's nearby?</li>
+						</ol>
 					</li>
 				</ol>
 
