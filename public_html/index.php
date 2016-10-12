@@ -79,29 +79,25 @@
 			<!-- Section 3: Entities -->
 			<section>
 				<h2>Entities</h2>
-				<table>
 
-					<tr>
-						<th>Column One</th>
-						<th>Column Two</th>
-					</tr>
-
-					<tr>
-						<td>Cat</td>
-						<td>Dog</td>
-					</tr>
-
-					<tr>
-						<td>Car</td>
-						<td>Bike</td>
-					</tr>
-
-					<tr>
-						<td>Star Wars</td>
-						<td>Star Trek</td>
-					</tr>
-
-				</table>
+				<ol>
+					<li>
+						<b>Search Box</b><br>
+						A 'quote' from the persona could oversimplify the persona, but it has the added advantage of giving the personas further personality.
+					</li>
+					<li>
+						<b>List of Events</b><br>
+						A description gives a brief summary of the persona, which often contains demographic information (sometimes going into surprisingly large amounts of detail). The description might include (among other information) their job, their technology, any pressures they're under and the situation they're in when they use the system/site.
+					</li>
+					<li>
+						<b>Calendar</b> (of the User from the Site)<br>
+						Needs, goals & features can either be a straight list for each persona, or a table comparing each persona against each possible need/feature/goal. This can help define a priority list for features (or the needs from which to develop features) before development starts.
+					</li>
+					<li>
+						<b>Category Checkboxes</b><br>
+						These are issues that the persona encounters, either with the existing system or because there's no existing system. These can clarify to designers exactly what the biggest issues this persona faces, and how the site can help them overcome their frustrations.
+					</li>
+				</ol>
 
 			</section>
 
