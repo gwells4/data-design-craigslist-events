@@ -9,3 +9,7 @@ body header {
 	color: green;
 	text-align: center;
 }
+
+body section img {
+	alignment: center;
+}
