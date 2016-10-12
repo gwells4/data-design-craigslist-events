@@ -13,6 +13,13 @@ body header {
 img {
 	alignment: center;
 	border-radius: 10px;
+
+	/* Have the image resize automatically as the size of the browser window changes. */
 	max-width: 100%;
 	height: auto;
+
+	/* Center the image. */
+	display: block;
+	margin: auto;
+	width: 50%;
 }
