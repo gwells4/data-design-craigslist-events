@@ -37,7 +37,7 @@
 					</li>
 					<li>
 						<b>Description</b><br>
-						<u>Hipster:</u> A person considered by themselves (and others) to be at the forefront of what's "hip". They may be either male, female, or other. The hip forefront generally includes fashion, and it may also include food & drink, music, art, and travel destinations. One's neighborhood is also very important, as the hipster considers there to be a clear line between fashionable and unfashionable neighborhoods.
+						<u>Hipster:</u> A person considered by themselves (and others) to be at the forefront of what's "hip". They may be either male, female, or other. The hip forefront generally includes fashion, and it may also include food & drink, music, art, and travel destinations. One's neighborhood is also very important, as the hipster considers there to be a clear line between fashionable and unfashionable neighborhoods. (See: <a href="https://en.wikipedia.org/wiki/The_Hipster_Handbook"><i>The Hipster Handbook</i></a> for more details.)
 					</li>
 					<li>
 						<b>Needs</b> (of the User from the Site)<br>
