@@ -59,11 +59,11 @@
 						<b>Behaviors</b><br>
 						These are the typical behaviours the persona exhibits. They're usually only shown if the personas different behaviours lead to different needs/requirements of the system in development.
 					</li>
+					<li>
+						<b>Scenarios</b><br>
+						These are sample use cases the persona may do. They can be based on either their goals or their use of an existing system. This can clarify exactly how a system will be/is used.
+					</li>
 				</ol>
-
-				Behaviours
-								Scenarios
-				These are sample use cases the persona may do. They can be based on either their goals or their use of an existing system. This can clarify exactly how a system will be/is used.
 
 			</section>
 
