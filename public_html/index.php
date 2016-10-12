@@ -47,16 +47,22 @@
 						<b>Frustrations</b><br>
 						These are issues that the persona encounters, either with the existing system or because there's no existing system. These can clarify to designers/developers exactly what the biggest issues this persona faces, and how the site can help them overcome their frustrations.
 					</li>
+					<li>
+						<b>Ideal Features</b><br>
+						This is very similar to features, but with no restrictions placed on their feasibility... these may be impossible to produce, but sometimes help designers/developers think of alternative approaches that are more realistic.
+					</li>
+					<li>
+						<b>Information Desired</b><br>
+						Any information the persona needs when trying to do their goal. These help designers/developers understand the key information needed to communicate to users.
+					</li>
+					<li>
+						<b>Behaviors</b><br>
+						These are the typical behaviours the persona exhibits. They're usually only shown if the personas different behaviours lead to different needs/requirements of the system in development.
+					</li>
 				</ol>
 
-				These are issues that the persona encounters, either with the existing system or because there's no existing system. These can clarify to designers/developers exactly what the biggest issues this persona faces.
-				Ideal features
-				This is very similar to features, but with no restrictions placed on their feasibility... these may be impossible to produce, but sometimes help designers/developers think of alternative approaches that are more realistic.
-				'Need to know'
-				Any information the persona needs when trying to do their goal. These help designers/developers understand the key information needed to communicate to users.
 				Behaviours
-				These are the typical behaviours the persona exhibits. They're usually only shown if the personas different behaviours lead to different needs/requirements of the system in development.
-				Scenarios
+								Scenarios
 				These are sample use cases the persona may do. They can be based on either their goals or their use of an existing system. This can clarify exactly how a system will be/is used.
 
 			</section>
