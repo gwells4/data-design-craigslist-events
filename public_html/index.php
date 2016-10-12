@@ -72,7 +72,7 @@
 				<h2>Use Case</h2>
 				<p>How, when, and where does a persona interact with your product? What are your users or persona’s goals? What steps must they take to complete their goal? This process can be mapped out in a flow chart or diagram.</p>
 
-				<img src="img/use-case-flowchart.png" alt="Flow chart for use case">
+				<img src="img/use-case-flowchart.png" alt="Flow chart for use case" width="40%" height="40%">
 
 			</section>
 
