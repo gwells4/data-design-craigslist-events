@@ -70,11 +70,7 @@
 			<!-- Section 2: Use Case -->
 			<section>
 				<h2>Use Case</h2>
-				<ul>
-					<li>Senator Arlo</li>
-					<li>Star Wars</li>
-					<li>Donuts</li>
-				</ul>
+				<p>How, when, and where does a persona interact with your product? What are your users or persona’s goals? What steps must they take to complete their goal? This process can be mapped out in a flow chart or diagram.</p>
 			</section>
 
 			<!-- Section 3: Entities -->
