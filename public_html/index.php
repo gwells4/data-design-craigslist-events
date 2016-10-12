@@ -43,6 +43,10 @@
 						<b>Needs</b> (from the Site)<br>
 						Needs, goals & features can either be a straight list for each persona, or a table comparing each persona against each possible need/feature/goal. This can help define a priority list for features (or the needs from which to develop features) before development starts.
 					</li>
+					<li>
+						<b>Frustrations</b><br>
+						These are issues that the persona encounters, either with the existing system or because there's no existing system. These can clarify to designers/developers exactly what the biggest issues this persona faces, and how the site can help them overcome their frustrations.
+					</li>
 				</ol>
 
 				These are issues that the persona encounters, either with the existing system or because there's no existing system. These can clarify to designers/developers exactly what the biggest issues this persona faces.
