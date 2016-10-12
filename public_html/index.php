@@ -83,15 +83,15 @@
 				<ol>
 					<li>
 						<b>Search Box</b><br>
-						A 'quote' from the persona could oversimplify the persona, but it has the added advantage of giving the personas further personality.
+						A search box to allow the user to search for events.
 					</li>
 					<li>
 						<b>List of Events</b><br>
-						A description gives a brief summary of the persona, which often contains demographic information (sometimes going into surprisingly large amounts of detail). The description might include (among other information) their job, their technology, any pressures they're under and the situation they're in when they use the system/site.
+						A list of events based on the criteria searched (or selected) by the user.
 					</li>
 					<li>
 						<b>Calendar</b> (of the User from the Site)<br>
-						Needs, goals & features can either be a straight list for each persona, or a table comparing each persona against each possible need/feature/goal. This can help define a priority list for features (or the needs from which to develop features) before development starts.
+						The calendar lets the user click on a day and brings up a list of events scheduled for that day.
 					</li>
 					<li>
 						<b>Event Category Checkboxes</b><br>
