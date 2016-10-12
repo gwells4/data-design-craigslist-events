@@ -4,7 +4,7 @@
 	<head>
 
 		<meta charset="utf-8" />
-		<link rel="Browser Tab Icon" href="img/icon-php-file.jpg" type="image/jpg">
+		<link rel="Browser-Tab Icon" href="img/icon-list.svg" type="image/svg">
 
 		<!-- Add CSS file -->
 		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
