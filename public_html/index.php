@@ -25,11 +25,16 @@
 
 			<!-- Section 1: Persona -->
 			<section>
+
 				<h2>Persona</h2>
-				<p>Knausgaard chia helvetica post-ironic, meggings schlitz lomo.</p>
+
 				<img src="img/sandbox-image-1.jpg" alt="Picture for Persona">
 
 				<ol>
+					<li>
+						<b>Quote</b><br>
+						A 'quote' from the persona could oversimplify the persona, but it has the added advantage of giving the personas further personality.
+					</li>
 					<li>
 						<b>Description</b><br>
 						A description gives a brief summary of the persona, which often contains demographic information (sometimes going into surprisingly large amounts of detail). The description might include (among other information) their job, their technology, any pressures they're under and the situation they're in when they use the system/site.
@@ -40,12 +45,6 @@
 					</li>
 				</ol>
 
-
-				Personas may contain a whole variety of other pieces of information, including:
-
-				A 'quote' from the persona
-				This should summarise their needs/goals into a single sentence. This can be a double edged sword, as this single sentence runs the risk of oversimplifying the personas issues. Quotes do have the added advantage of giving the personas further personality.
-				Frustrations
 				These are issues that the persona encounters, either with the existing system or because there's no existing system. These can clarify to designers/developers exactly what the biggest issues this persona faces.
 				Ideal features
 				This is very similar to features, but with no restrictions placed on their feasibility... these may be impossible to produce, but sometimes help designers/developers think of alternative approaches that are more realistic.
