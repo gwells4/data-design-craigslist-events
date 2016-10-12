@@ -74,8 +74,10 @@
 
 			<!-- Section 2: Use Case -->
 			<section>
+
 				<h2>Use Case</h2>
-				<p>How, when, and where does a persona interact with your product? What are your users or persona’s goals? What steps must they take to complete their goal? This process can be mapped out in a flow chart or diagram.</p>
+
+				<p>The hipster will interact with the site based on the scenarios above. The flowchart below visually depicts the steps they will take while using the site.</p>
 
 				<img src="img/data-design-craigslist-events-use-case.svg" alt="Flow chart for use case" >
 
@@ -83,6 +85,7 @@
 
 			<!-- Section 3: Entities -->
 			<section>
+
 				<h2>Entities</h2>
 
 				<ol>
