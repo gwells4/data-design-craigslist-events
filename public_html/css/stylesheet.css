@@ -1,5 +1,4 @@
 
-
 body {
 	color: black;
 }
@@ -7,4 +6,6 @@ body {
 body header {
 	background: #F0F0F0;
 	border:1px solid #000000;
+	color: green;
+	text-align: center;
 }
