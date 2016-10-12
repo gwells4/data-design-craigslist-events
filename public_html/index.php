@@ -29,6 +29,7 @@
 				<h2>Persona</h2>
 
 				<img src="img/male-hipster.jpg" alt="Picture of Male Hipster for Persona">
+				<img src="img/female-hipster-annotated.jpg" alt="Picture of Male Hipster for Persona">
 
 				<ol>
 					<li>
