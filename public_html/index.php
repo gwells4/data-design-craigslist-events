@@ -90,7 +90,7 @@
 						A list of events based on the criteria searched (or selected) by the user.
 					</li>
 					<li>
-						<b>Calendar</b> (of the User from the Site)<br>
+						<b>Calendar</b><br>
 						The calendar lets the user click on a day and brings up a list of events scheduled for that day.
 					</li>
 					<li>
