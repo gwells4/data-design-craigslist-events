@@ -41,15 +41,23 @@
 					</li>
 					<li>
 						<b>Needs</b> (of the User from the Site)<br>
-						The hipster needs the most up-to-date information to pick the most hip event to attend. Enough detail needs to be included
+						The hipster needs the most up-to-date information to pick the most hip event to attend. Enough detail needs to be included to judge the hipness, so posters of events should be able to enter an adequate description and location, as well as the date & time information.
 					</li>
 					<li>
 						<b>Frustrations</b><br>
-						These are issues that the persona encounters, either with the existing system or because there's no existing system. These can clarify to designers exactly what the biggest issues this persona faces, and how the site can help them overcome their frustrations.
+						The hipsters number one frustration is not having enough information to judge the hipness of an event. When in doubt, though, the hipster will rule out all events that do not include enough details for the judge the hipness of the event.
 					</li>
 					<li>
 						<b>Ideal Features</b><br>
-						This is very similar to features, but with no restrictions placed on their feasibility... These may be impossible to produce, but sometimes help designers think of alternative approaches that are more realistic.
+						Prompts for event poseters to input detailed information, such as:
+						<ul>
+							<li>Date & Time</li>
+							<li>Location (Address or GPS)</li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 					</li>
 					<li>
 						<b>Information Desired</b><br>
