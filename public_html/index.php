@@ -97,10 +97,18 @@
 			<!-- Section 4: Entities -->
 			<section>
 
-				<h2>Entities</h2>
+				<h2>Entity</h2>
 
 				<h3>Event</h3>
-
+				<ul>
+					<li>Date</li>
+					<li>Time</li>
+					<li>Venue</li>
+					<li>Food Details</li>
+					<li>Entertainment</li>
+					<li>Special Guests</li>
+					<li>Schedule</li>
+				</ul>
 
 			</section>
 
