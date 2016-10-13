@@ -11,7 +11,7 @@ body header {
 }
 
 
-img [id=|picture] {
+img[id=|picture] {
 	alignment: center;
 	border-radius: 10px;
 
@@ -26,7 +26,7 @@ img [id=|picture] {
 }
 
 
-img [id=|diagram] {
+img[id=|diagram] {
 	alignment: center;
 	border-radius: 10px;
 
