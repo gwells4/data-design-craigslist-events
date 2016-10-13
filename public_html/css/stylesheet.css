@@ -11,7 +11,7 @@ body header {
 }
 
 
-img[id=|picture] {
+[ id |= picture ] {
 	alignment: center;
 	border-radius: 10px;
 
@@ -26,8 +26,8 @@ img[id=|picture] {
 }
 
 
-img[id=|diagram] {
-	alignment: center;
+[ src $= svg ] {
+	alignment: right;
 	border-radius: 10px;
 
 	/* Have the image resize automatically as the size of the browser window changes. */
