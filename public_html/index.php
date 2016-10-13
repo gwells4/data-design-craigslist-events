@@ -17,7 +17,7 @@
 
 		<!-- This is the header -->
 		<header>
-			<h1><u>Data Design: Craigslist Events</u></h1>
+			<h1>Data Design: Craigslist Events</h1>
 		</header>
 
 		<!-- This is the main page content. -->
@@ -99,43 +99,8 @@
 
 				<h2>Entities</h2>
 
-				<ol>
-					<li>
-						<b>Search Box</b><br>
-						A search box to allow the user to search for events.
-					</li>
-					<li>
-						<b>List of Events</b><br>
-						A list of events based on the criteria searched (or selected) by the user.
-					</li>
-					<li>
-						<b>Calendar</b><br>
-						The calendar lets the user click on a day and brings up a list of events scheduled for that day.
-					</li>
-					<li>
-						<b>Event Category Checkboxes</b><br>
-						<p>Some examples are:</p>
-						<ul>
-							<li>Art</li>
-							<li>Film</li>
-							<li>Career</li>
-							<li>Charitable</li>
-							<li>Competitive</li>
-							<li>Dance</li>
-							<li>Festival</li>
-							<li>Fitness & Health</li>
-							<li>Food & Drink</li>
-							<li>Free</li>
-							<li>Kid Friendly</li>
-							<li>Literary</li>
-							<li>Music</li>
-							<li>Outdoor</li>
-							<li>Sale or Promotional</li>
-							<li>Singles</li>
-							<li>Technology</li>
-						</ul>
-					</li>
-				</ol>
+				<h3>Event</h3>
+
 
 			</section>
 
