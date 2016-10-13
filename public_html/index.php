@@ -97,18 +97,40 @@
 			<!-- Section 4: Entities -->
 			<section>
 
-				<h2>Entity</h2>
+				<h2>Entities</h2>
 
-				<h3>Event</h3>
-				<ul>
-					<li>Date</li>
-					<li>Time</li>
-					<li>Venue</li>
-					<li>Food Details</li>
-					<li>Entertainment</li>
-					<li>Special Guests</li>
-					<li>Schedule</li>
-				</ul>
+				<table>
+					<tr>
+						<th>Entity</th>
+						<th>event</th>
+						<th>image</th>
+						<th>poster</th>
+					</tr>
+					<tr>
+						<th>Attributes</th>
+						<td>
+							eventID<br>
+							eventDate<br>
+							eventTime<br>
+							eventVenue<br>
+							eventFood<br>
+							eventEntertainment<br>
+							eventSpecialGuests<br>
+							eventSchedule
+						</td>
+						<td>
+							image<br>
+							eventID<br>
+							imagePath<br>
+						</td>
+						<td>
+							posterName<br>
+							posterEmail<br>
+							posterPhone<br>
+							eventID
+						</td>
+					</tr>
+				</table>
 
 			</section>
 
