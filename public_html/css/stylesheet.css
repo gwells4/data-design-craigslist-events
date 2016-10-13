@@ -10,7 +10,8 @@ body header {
 	text-align: center;
 }
 
-img {
+
+img [id=|picture] {
 	alignment: center;
 	border-radius: 10px;
 
@@ -22,4 +23,19 @@ img {
 	display: block;
 	margin: auto;
 	width: 25%;
+}
+
+
+img [id=|diagram] {
+	alignment: center;
+	border-radius: 10px;
+
+	/* Have the image resize automatically as the size of the browser window changes. */
+	max-width: 50%;
+	height: auto;
+
+	/* Center the image. */
+	display: block;
+	margin: auto;
+	width: 50%;
 }

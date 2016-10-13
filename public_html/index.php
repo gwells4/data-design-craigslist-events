@@ -28,8 +28,8 @@
 
 				<h2>Persona</h2>
 
-				<img src="img/male-hipster.jpg" alt="Picture of Male Hipster for Persona">
-				<img src="img/female-hipster-annotated.jpg" alt="Picture of Female Hipster for Persona">
+				<img id="picture-male-hipster" src="img/male-hipster.jpg" alt="Picture of Male Hipster for Persona">
+				<img id="picture-female-hipster" src="img/female-hipster-annotated.jpg" alt="Picture of Female Hipster for Persona">
 
 				<ol>
 					<li>
@@ -79,7 +79,7 @@
 
 				<p>The hipster will interact with the site based on the scenarios above. The flowchart below visually depicts the steps they will take while using the site.</p>
 
-				<img src="img/data-design-craigslist-events-use-case.svg" alt="Flow chart for use case" >
+				<img  id="diagram-use-case" src="img/data-design-craigslist-events-use-case.svg" alt="Flow chart for use case" >
 
 			</section>
 
@@ -90,7 +90,7 @@
 
 				<p>The hipster will interact with the site based on the scenarios above. The flowchart below visually depicts the steps they will take while using the site.</p>
 
-				<img src="img/data-design-craigslist-events-use-case.svg" alt="Flow chart for use case" >
+				<img id="diagram-interaction-flow" src="img/data-design-craigslist-events-user-interaction-flow.svg" alt="Flow chart for use case" >
 
 			</section>
 
