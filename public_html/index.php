@@ -86,11 +86,13 @@
 			<!-- Section 3: User Interaction Flow -->
 			<section>
 
-				<h2>User Interaction Flow (aka Navigation Diagram)</h2>
+				<h2>User Interaction Flow</h2>
 
-				<p>The hipster will interact with the site based on the scenarios above. The flowchart below visually depicts the steps they will take while using the site.</p>
-
-				<img id="diagram-interaction-flow" src="img/data-design-craigslist-events-user-interaction-flow.svg" alt="Flow chart for use case" >
+				<ol>
+					<li>If the user wants to know what events are on a specific date, then they search using the calendar.</li>
+					<li>If the user wants to know what events of a certain type are going on, then they will check the appropriate boxes for the category of the even they are interested in.</li>
+					<li>If the user wants to know what events are related to a specific keyword, then they will use the search box to search the events for thos keywords.</li>
+				</ol>
 
 			</section>
 
