@@ -97,7 +97,9 @@
 			<!-- Section 4: Entities -->
 			<section>
 
-				<h2>Entities</h2>
+				<h2>Data Design</h2>
+
+				<h3>Entities</h3>
 
 				<table>
 					<tr>
@@ -128,6 +130,13 @@
 						</td>
 					</tr>
 				</table>
+
+				<h3>Conceptual Model</h3>
+
+				<ol>
+					<li>Many <b>events</b> can have many <b></b>images</b>.</li>
+					<li>One <b>poster</b> can post many <b>events</b>.</li>
+				</ol>
 
 			</section>
 
