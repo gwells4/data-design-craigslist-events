@@ -83,7 +83,18 @@
 
 			</section>
 
-			<!-- Section 3: Entities -->
+			<!-- Section 3: User Interaction Flow -->
+			<section>
+
+				<h2>User Interaction Flow (aka Navigation Diagram)</h2>
+
+				<p>The hipster will interact with the site based on the scenarios above. The flowchart below visually depicts the steps they will take while using the site.</p>
+
+				<img src="img/data-design-craigslist-events-use-case.svg" alt="Flow chart for use case" >
+
+			</section>
+
+			<!-- Section 4: Entities -->
 			<section>
 
 				<h2>Entities</h2>
