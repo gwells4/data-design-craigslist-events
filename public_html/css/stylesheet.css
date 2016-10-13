@@ -31,7 +31,7 @@ body header {
 	border-radius: 10px;
 
 	/* Have the image resize automatically as the size of the browser window changes. */
-	max-width: 50%;
+	max-width: 80%;
 	height: auto;
 
 	/* Center the image. */
