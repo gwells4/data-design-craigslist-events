@@ -134,7 +134,7 @@
 				<h3>Conceptual Model</h3>
 
 				<ol>
-					<li>Many <b>events</b> can have many <b></b>images</b>.</li>
+					<li>Many <b>events</b> can have many <b>images</b>.</li>
 					<li>One <b>poster</b> can post many <b>events</b>.</li>
 				</ol>
 
