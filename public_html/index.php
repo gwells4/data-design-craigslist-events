@@ -110,17 +110,14 @@
 						<th>Attributes</th>
 						<td>
 							eventID<br>
-							eventDate<br>
-							eventTime<br>
+							eventDateTime<br>
 							eventVenue<br>
-							eventFood<br>
-							eventEntertainment<br>
-							eventSpecialGuests<br>
-							eventSchedule
+							eventDetails
 						</td>
 						<td>
 							image<br>
 							eventID<br>
+							imageFilename<br>
 							imagePath<br>
 						</td>
 						<td>
