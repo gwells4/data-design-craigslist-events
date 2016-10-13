@@ -91,7 +91,7 @@
 				<ol>
 					<li>If the user wants to know what events are on a specific date, then they search using the calendar.</li>
 					<li>If the user wants to know what events of a certain type are going on, then they will check the appropriate boxes for the category of the even they are interested in.</li>
-					<li>If the user wants to know what events are related to a specific keyword, then they will use the search box to search the events for thos keywords.</li>
+					<li>If the user wants to know what events are related to a specific keyword, then they will use the search box to search the events for those keywords.</li>
 				</ol>
 
 			</section>
