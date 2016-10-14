@@ -113,14 +113,14 @@
 					<tr>
 						<th>Attributes</th>
 						<td>
-							eventID<br>
+							eventId<br>
 							eventDateTime<br>
 							eventVenue<br>
 							eventDetails
 						</td>
 						<td>
 							image<br>
-							eventID<br>
+							imageEventId<br>
 							imageFilename<br>
 							imagePath<br>
 						</td>
@@ -128,7 +128,7 @@
 							posterName<br>
 							posterEmail<br>
 							posterPhone<br>
-							eventID
+							posterEventId
 						</td>
 					</tr>
 				</table>
