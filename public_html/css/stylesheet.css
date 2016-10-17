@@ -1,6 +1,14 @@
 
 h1 {
 	text-decoration: underline;
+
+	/* -webkit-marquee: auto medium infinite alternate normal; */
+
+	 marquee-direction: left;
+	 marquee-play-count: infinite;
+	 marquee-speed: normal;
+	 marquee-style: alternate;
+
 }
 
 h2 {
@@ -20,6 +28,12 @@ body header {
 	border:1px solid #000000;
 	color: black;
 	text-align: center;
+
+	/* marquee-direction: left; */
+	/* marquee-play-count: 10; */
+	/* marquee-speed: normal; */
+	/* marquee-style: alternate; */
+
 }
 
 

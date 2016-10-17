@@ -140,6 +140,13 @@
 					<li>One <b>poster</b> can post many <b>events</b>.</li>
 				</ol>
 
+				<h3>Entity Relationship Diagram</h3>
+
+				<ol>
+					<li>Many <b>events</b> can have many <b>images</b>.</li>
+					<li>One <b>poster</b> can post many <b>events</b>.</li>
+				</ol>
+
 			</section>
 
 		</main>
