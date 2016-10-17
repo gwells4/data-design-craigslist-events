@@ -38,11 +38,11 @@
 					</li>
 					<li>
 						<b>Description</b><br>
-						<u>Hipster:</u> A person considered by themselves (and others) to be at the forefront of what's "hip". They may be either male, female, or other. The hip forefront generally includes fashion, and it may also include food & drink, music, art, and travel destinations. One's neighborhood is also very important, as the hipster considers there to be a clear line between fashionable and unfashionable neighborhoods. (See: <a href="https://en.wikipedia.org/wiki/The_Hipster_Handbook"><i>The Hipster Handbook</i></a> for more details.)
+						<u>Hipster:</u> A person considered by themselves (and others) to be at the forefront of what's "hip". They may be either male, female, or other. The hip forefront generally includes fashion, and it may also include food &amp; drink, music, art, and travel destinations. One's neighborhood is also very important, as the hipster considers there to be a clear line between fashionable and unfashionable neighborhoods. (See: <a href="https://en.wikipedia.org/wiki/The_Hipster_Handbook"><i>The Hipster Handbook</i></a> for more details.)
 					</li>
 					<li>
 						<b>Needs</b> (of the User from the Site)<br>
-						The hipster needs the most up-to-date information to pick the most hip event to attend. Enough detail needs to be included to judge the hipness, so posters of events should be able to enter an adequate description and location, as well as the date & time information.
+						The hipster needs the most up-to-date information to pick the most hip event to attend. Enough detail needs to be included to judge the hipness, so posters of events should be able to enter an adequate description and location, as well as the date &amp; time information.
 					</li>
 					<li>
 						<b>Frustrations</b><br>
@@ -52,7 +52,7 @@
 						<b>Ideal Features</b><br>
 						Prompts for event posters to input detailed information, such as:
 						<ul>
-							<li>Date & Time</li>
+							<li>Date &amp; Time</li>
 							<li>Venue (Address or GPS)</li>
 							<li>Food? Non/organic? Vegetarian? Allergy-compatible?</li>
 							<li>Entertainment</li>
