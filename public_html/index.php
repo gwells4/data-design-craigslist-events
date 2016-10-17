@@ -119,7 +119,7 @@
 							eventDetails
 						</td>
 						<td>
-							image<br>
+							imageId<br>
 							imageEventId<br>
 							imageFilename<br>
 							imagePath<br>
