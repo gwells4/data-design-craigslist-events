@@ -142,10 +142,7 @@
 
 				<h3>Entity Relationship Diagram</h3>
 
-				<ol>
-					<li>Many <b>events</b> can have many <b>images</b>.</li>
-					<li>One <b>poster</b> can post many <b>events</b>.</li>
-				</ol>
+				<img  id="diagram-entity-relationship" src="img/data-design-craigslist-events-erd.svg" alt="Entity Relationship Diagram" >
 
 			</section>
 
