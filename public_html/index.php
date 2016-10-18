@@ -106,9 +106,9 @@
 				<table>
 					<tr>
 						<th>Entity</th>
-						<th>event</th>
-						<th>image</th>
-						<th>poster</th>
+						<th>events</th>
+						<th>images</th>
+						<th>posters</th>
 					</tr>
 					<tr>
 						<th>Attributes</th>
@@ -116,19 +116,20 @@
 							eventId<br>
 							eventDateTime<br>
 							eventVenue<br>
+							eventCategory<br>
 							eventDetails
-						</td>
-						<td>
-							imageId<br>
-							imageEventId<br>
-							imageFilename<br>
-							imagePath<br>
 						</td>
 						<td>
 							posterName<br>
 							posterEmail<br>
 							posterPhone<br>
 							posterEventId
+						</td>
+						<td>
+							imageId<br>
+							imageEventId<br>
+							imageFilename<br>
+							imagePath<br>
 						</td>
 					</tr>
 				</table>
