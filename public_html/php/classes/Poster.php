@@ -50,7 +50,7 @@ class Poster {
 	 * @return string
 	 */
 	public function getPosterName() {
-		return ($this->posterName);
+		return $this->posterName;
 	}
 
 	/**
@@ -59,7 +59,7 @@ class Poster {
 	 * @return string
 	 */
 	public function getPosterEmail() {
-		return ($this->posterEmail);
+		return $this->posterEmail;
 	}
 
 	/**
@@ -68,7 +68,7 @@ class Poster {
 	 * @return string
 	 */
 	public function getPosterPhone() {
-		return ($this->posterPhone);
+		return $this->posterPhone;
 	}
 
 	/**
@@ -77,7 +77,7 @@ class Poster {
 	 * @return int
 	 */
 	public function getPosterEventId() {
-		return ($this->posterEventId);
+		return $this->posterEventId;
 	}
 }
 

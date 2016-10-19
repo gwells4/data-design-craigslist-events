@@ -46,7 +46,7 @@ class Image {
 	 * @return int|null
 	 */
 	public function getImageId() {
-		return ($this->imageId);
+		return $this->imageId;
 	}
 
 	/**
@@ -55,7 +55,7 @@ class Image {
 	 * @return int
 	 */
 	public function getImageEventId() {
-		return ($this->imageEventId);
+		return $this->imageEventId;
 	}
 
 	/**
@@ -64,7 +64,7 @@ class Image {
 	 * @return string
 	 */
 	public function getImageFilename() {
-		return ($this->imageFilename);
+		return $this->imageFilename;
 	}
 
 	/**
@@ -73,7 +73,7 @@ class Image {
 	 * @return string
 	 */
 	public function getImagePath() {
-		return ($this->imagePath);
+		return $this->imagePath;
 	}
 }
 

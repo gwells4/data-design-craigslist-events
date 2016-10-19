@@ -45,7 +45,7 @@ class Event {
 	 * @return int|null
 	 */
 	public function getEventId() {
-		return ($this->eventId);
+		return $this->eventId;
 	}
 
 	/**
@@ -54,7 +54,7 @@ class Event {
 	 * @return string
 	 */
 	public function getEventDateTime() {
-		return ($this->eventDateTime);
+		return $this->eventDateTime;
 	}
 
 	/**
@@ -63,7 +63,7 @@ class Event {
 	 * @return string
 	 */
 	public function getEventVenue() {
-		return ($this->eventVenue);
+		return $this->eventVenue;
 	}
 
 	/**
@@ -72,7 +72,70 @@ class Event {
 	 * @return string
 	 */
 	public function getEventDetails() {
-		return ($this->eventDetails);
+		return $this->eventDetails;
+	}
+
+	/**
+	 * Mutator method for eventId
+	 *
+	 * @param int|null $eventId
+	 */
+	public function setEventId(int $newEventId = null) {
+
+		// Base case: if the eventId is null, this is a new Event before mySQL has assigned an Id
+		if($newEventId === null) {
+			$this->eventId = null;
+			return;
+		}
+		// Verify the eventId is positive
+		if($newEventId <= 0) {
+			throw(new \RangeException("eventId is not positive"));
+		}
+		// Convert and store the eventId
+		$this->tweetId = $newEventId;
+
+	}
+
+	/**
+	 * Mutator method for eventDateTime
+	 *
+	 * @param string $eventDateTime
+	 */
+	public function setEventDateTime($eventDateTime) {
+		$this->eventDateTime = $eventDateTime;
+	}
+
+	/**
+	 * Mutator method for eventVenue
+	 *
+	 * @param string $eventVenue
+	 */
+	public function setEventVenue(string $newEventVenue) {
+
+		// Verify the eventVenue is secure
+		$newEventVenue = trim($newEventVenue);
+		$newEventVenue = filter_var($newEventVenue, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newEventVenue) === true) {
+			throw(new \InvalidArgumentException("eventVenue is empty or insecure"));
+		}
+
+		// verify the eventVenue will fit in the database
+		if(strlen($newEventVenue) > 50) {
+			throw(new \RangeException("eventVenue has too many characters in it"));
+		}
+
+		// Store the eventVenue
+		$this->eventVenue = $newEventVenue;
+
+	}
+
+	/**
+	 * Mutator method for eventDetails
+	 *
+	 * @param string $eventDetails
+	 */
+	public function setEventDetails($eventDetails) {
+		$this->eventDetails = $eventDetails;
 	}
 
 }
