@@ -35,6 +35,45 @@ class Event {
 	 **/
 	private $eventDetails;
 
+
+	// CONSTRUCTOR GOES HERE LATER
+
+	/**
+	 * Accessor method for eventId
+	 *
+	 * @return int|null
+	 */
+	public function getEventId() {
+		return ($this->eventId);
+	}
+
+	/**
+	 * Accessor method for eventDateTime
+	 *
+	 * @return string
+	 */
+	public function getEventDateTime() {
+		return ($this->eventDateTime);
+	}
+
+	/**
+	 * Accessor method for eventVenue
+	 *
+	 * @return string
+	 */
+	public function getEventVenue() {
+		return ($this->eventVenue);
+	}
+
+	/**
+	 * Accessor method for eventDetails
+	 *
+	 * @return string
+	 */
+	public function getEventDetails() {
+		return ($this->eventDetails);
+	}
+
 }
 
 
