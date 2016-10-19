@@ -75,46 +75,94 @@ class Image {
 	public function getImagePath() {
 		return $this->imagePath;
 	}
-}
 
-/**
- * Mutator method for imageId
- *
- * @param int|null $imageId
- */
-public function setImageId($newImageId = null) {
 
-	// Base case: if the imageId is null, this is a new Image before mySQL has assigned an Id
-	if($newImageId === null) {
-		$this->imageId = null;
-		return;
-	}
-	// Verify the imageId is positive
-	if($newImageId <= 0) {
-		throw(new \RangeException("imageId is not positive"));
-	}
-	// Store the imageId
-	$this->imageId = $newImageId;
+	/**
+	 * Mutator method for imageId
+	 *
+	 * @param int|null $imageId
+	 */
+	public function setImageId($newImageId = null) {
 
-}
+		// Base case: if the imageId is null, this is a new Image before mySQL has assigned an Id
+		if($newImageId === null) {
+			$this->imageId = null;
+			return;
+		}
+		// Verify that imageId is positive
+		if($newImageId <= 0) {
+			throw(new \RangeException("imageId is not positive"));
+		}
+		// Store the imageId
+		$this->imageId = $newImageId;
 
-/**
- * Mutator method for imageEventId
- *
- * @param int $newImageEventId new value of imageEventId
- * @throws \RangeException if $newImageEventId is not positive
- * @throws \TypeError if $newImageEventId is not an integer
- **/
-public function setImageEventId($newImageEventId) {
-
-	// Verify the imageEventId is positive
-	if($newImageEventId <= 0) {
-		throw(new \RangeException("imageEventId is not positive"));
 	}
 
-	// Store the imageEventId
-	$this->imageEventId = $newImageEventId;
+	/**
+	 * Mutator method for imageEventId
+	 *
+	 * @param int $newImageEventId new value of imageEventId
+	 * @throws \RangeException if $newImageEventId is not positive
+	 * @throws \TypeError if $newImageEventId is not an integer
+	 **/
+	public function setImageEventId($newImageEventId) {
+
+		// Verify that imageEventId is positive
+		if($newImageEventId <= 0) {
+			throw(new \RangeException("imageEventId is not positive"));
+		}
+
+		// Store the imageEventId
+		$this->imageEventId = $newImageEventId;
+	}
+
+	/**
+	 * Mutator method for imageFilename
+	 *
+	 * @param string $newImageFilename
+	 */
+	public function setImageFilename($newImageFilename) {
+
+		// Verify that imageFilename is secure
+		$newImageFilename = trim($newImageFilename);
+		$newImageFilename = filter_var($newImageFilename, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newImageFilename) === true) {
+			throw(new \InvalidArgumentException("imageFilename is empty or insecure"));
+		}
+
+		// Verify that imageFilename will fit in the database
+		if(strlen($newImageFilename) > 20) {
+			throw(new \RangeException("imageFilename has too many characters in it"));
+		}
+
+		// Store the imageFilename
+		$this->imageFilename = $newImageFilename;
+
+	}
+
+	/**
+	 * Mutator method for imagePath
+	 *
+	 * @param string $newImagePath
+	 */
+	public function setImagePath($newImagePath) {
+
+		// Verify that imagePath is secure
+		$newImagePath = trim($newImagePath);
+		$newImagePath = filter_var($newImagePath, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newImagePath) === true) {
+			throw(new \InvalidArgumentException("imagePath is empty or insecure"));
+		}
+
+		// Verify that imagePath will fit in the database
+		if(strlen($newImagePath) > 100) {
+			throw(new \RangeException("imagePath has too many characters in it"));
+		}
+
+		// Store the imagePath
+		$this->imagePath = $newImagePath;
+
+	}
+
 }
-
-
 ?>
