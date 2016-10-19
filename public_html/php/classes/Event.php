@@ -14,25 +14,25 @@ class Event {
 	 *
 	 * @var int $eventId
 	 **/
-	private eventId;
+	private $eventId;
 	/**
 	 * The Date & Time for this Event.
 	 *
 	 * @var string $eventDateTime
 	 **/
-	private eventDateTime;
+	private $eventDateTime;
 	/**
 	 * The Venue for this Event.
 	 *
 	 * @var string $eventVenue
 	 **/
-	private eventVenue;
+	private $eventVenue;
 	/**
 	 * The Details of this Event.
 	 *
 	 * @var string $eventDetails
 	 **/
-	private eventDetails;
+	private $eventDetails;
 
 }
 
