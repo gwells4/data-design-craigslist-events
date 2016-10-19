@@ -92,16 +92,18 @@ class Event {
 			throw(new \RangeException("eventId is not positive"));
 		}
 		// Convert and store the eventId
-		$this->tweetId = $newEventId;
+		$this->eventId = $newEventId;
 
 	}
 
 	/**
 	 * Mutator method for eventDateTime
 	 *
-	 * @param string $eventDateTime
+	 * @param \DateTime|string|null $newEventDateTime is a DateTime object or string
+	 * @throws \InvalidArgumentException if $newTweetDate is not a valid object or string
+	 * @throws \RangeException if $newTweetDate is a date that does not exist
 	 */
-	public function setEventDateTime($eventDateTime) {
+	public function setEventDateTime($newEventDateTime) {
 		$this->eventDateTime = $eventDateTime;
 	}
 
