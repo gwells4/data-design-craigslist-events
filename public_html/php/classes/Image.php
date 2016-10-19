@@ -89,6 +89,11 @@ class Image {
 			$this->imageId = null;
 			return;
 		}
+
+		// Verify that imageId is secure
+		$newImageId = trim($newImageId);
+		$newImageId = filter_var($newImageId, FILTER_SANITIZE_NUMBER_INT);
+
 		// Verify that imageId is positive
 		if($newImageId <= 0) {
 			throw(new \RangeException("imageId is not positive"));
@@ -106,6 +111,10 @@ class Image {
 	 * @throws \TypeError if $newImageEventId is not an integer
 	 **/
 	public function setImageEventId($newImageEventId) {
+
+		// Verify that imageEventId is secure
+		$newImageEventId = trim($newImageEventId);
+		$newImageEventId = filter_var($newImageEventId, FILTER_SANITIZE_NUMBER_INT);
 
 		// Verify that imageEventId is positive
 		if($newImageEventId <= 0) {

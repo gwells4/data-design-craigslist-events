@@ -162,6 +162,10 @@ class Poster {
 	 **/
 	public function setPosterEventId($newPosterEventId) {
 
+		// Verify that posterEventId is secure
+		$newPosterEventId = trim($newPosterEventId);
+		$newPosterEventId = filter_var($newPosterEventId, FILTER_SANITIZE_NUMBER_INT);
+
 		// Verify that posterEventId is positive
 		if($newPosterEventId <= 0) {
 			throw(new \RangeException("posterEventId is not positive"));

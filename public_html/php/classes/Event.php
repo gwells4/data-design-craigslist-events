@@ -88,6 +88,11 @@ class Event {
 			$this->eventId = null;
 			return;
 		}
+
+		// Verify that eventId is secure
+		$newEventId = trim($newEventId);
+		$newEventId = filter_var($newEventId, FILTER_SANITIZE_NUMBER_INT);
+
 		// Verify that eventId is positive
 		if($newEventId <= 0) {
 			throw(new \RangeException("eventId is not positive"));
