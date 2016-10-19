@@ -99,12 +99,29 @@ class Event {
 	/**
 	 * Mutator method for eventDateTime
 	 *
-	 * @param \DateTime|string|null $newEventDateTime is a DateTime object or string
+	 * @param \DateTime|string $newEventDateTime is a DateTime object or string
 	 * @throws \InvalidArgumentException if $newTweetDate is not a valid object or string
 	 * @throws \RangeException if $newTweetDate is a date that does not exist
 	 */
 	public function setEventDateTime($newEventDateTime) {
-		$this->eventDateTime = $eventDateTime;
+
+		// Verify the eventDateTime is secure (and not null)
+		$newEventDateTime = trim($newEventDateTime);
+		$newEventDateTime = filter_var($newEventDateTime, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newEventDateTime) === true) {
+			throw(new \InvalidArgumentException("$eventDateTime is empty or insecure"));
+		}
+
+		// Store the eventDateTime
+		try {
+			$newTweetDate = self::validateDateTime($newEventDateTime);
+		} catch(\InvalidArgumentException $invalidArgument) {
+			throw(new \InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
+		} catch(\RangeException $range) {
+			throw(new \RangeException($range->getMessage(), 0, $range));
+		}
+		$this->eventDateTime = $newEventDateTime;
+
 	}
 
 	/**
