@@ -135,7 +135,22 @@ class Event {
 	 * @param string $eventDetails
 	 */
 	public function setEventDetails($eventDetails) {
-		$this->eventDetails = $eventDetails;
+
+		// Verify the eventDetails is secure
+		$newEventDetails = trim($newEventDetails);
+		$newEventDetails = filter_var($newEventDetails, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newEventDetails) === true) {
+			throw(new \InvalidArgumentException("eventDetails is empty or insecure"));
+		}
+
+		// verify the eventDetails will fit in the database
+		if(strlen($newEventDetails) > 2000) {
+			throw(new \RangeException("eventDetails has too many characters in it"));
+		}
+
+		// Store the eventDetails
+		$this->eventDetails = $newEventDetails;
+
 	}
 
 }
