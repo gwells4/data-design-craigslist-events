@@ -114,7 +114,7 @@ class Poster {
 
 		// Verify that posterEmail is secure
 		$newPosterEmail = trim($newPosterEmail);
-		$newPosterEmail = filter_var($newPosterEmail, FILTER_VALIDATE_EMAIL, FILTER_SANITIZE_EMAIL);
+		$newPosterEmail = filter_var($newPosterEmail, FILTER_SANITIZE_EMAIL);
 		if(empty($newPosterEmail) === true) {
 			throw(new \InvalidArgumentException("posterEmail is empty or insecure"));
 		}
