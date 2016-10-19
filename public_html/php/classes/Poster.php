@@ -20,6 +20,7 @@ class Poster {
 	 * The Email address of the Poster.
 	 * This is the primary key.
 	 * In the real craigslist, it may be optionally assigned by craigslist.
+	 * Is is a required field.
 	 *
 	 * @var string $posterEmail
 	 **/

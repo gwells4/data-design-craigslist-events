@@ -11,8 +11,9 @@ class Image {
 	/**
 	 * The Id for this Image.
 	 * This is the primary key.
+	 * The null datatype is specified below, because the SQL will assign the value, and the null serves as a placeholder.
 	 *
-	 * @var int $imageId
+	 * @var int|null $imageId
 	 **/
 	private $imageId;
 	/**

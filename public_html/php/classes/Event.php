@@ -11,8 +11,9 @@ class Event {
 	/**
 	 * The Id for this Event.
 	 * This is the primary key.
+	 * The null datatype is specified below, because the SQL will assign the value, and the null serves as a placeholder.
 	 *
-	 * @var int $eventId
+	 * @var int|null $eventId
 	 **/
 	private $eventId;
 	/**
