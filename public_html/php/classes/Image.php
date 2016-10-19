@@ -82,7 +82,7 @@ class Image {
  *
  * @param int|null $imageId
  */
-public function setImageId(int $newImageId = null) {
+public function setImageId($newImageId = null) {
 
 	// Base case: if the imageId is null, this is a new Image before mySQL has assigned an Id
 	if($newImageId === null) {
@@ -105,7 +105,7 @@ public function setImageId(int $newImageId = null) {
  * @throws \RangeException if $newImageEventId is not positive
  * @throws \TypeError if $newImageEventId is not an integer
  **/
-public function setImageEventId(int $newImageEventId) {
+public function setImageEventId($newImageEventId) {
 
 	// Verify the imageEventId is positive
 	if($newImageEventId <= 0) {

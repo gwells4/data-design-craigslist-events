@@ -80,14 +80,14 @@ class Event {
 	 *
 	 * @param int|null $eventId
 	 */
-	public function setEventId(int $newEventId = null) {
+	public function setEventId($newEventId = null) {
 
 		// Base case: if the eventId is null, this is a new Event before mySQL has assigned an Id
 		if($newEventId === null) {
 			$this->eventId = null;
 			return;
 		}
-		// Verify the eventId is positive
+		// Verify that eventId is positive
 		if($newEventId <= 0) {
 			throw(new \RangeException("eventId is not positive"));
 		}
@@ -103,18 +103,18 @@ class Event {
 	 * @throws \InvalidArgumentException if $newTweetDate is not a valid object or string
 	 * @throws \RangeException if $newTweetDate is a date that does not exist
 	 */
-	public function setEventDateTime(string $newEventDateTime) {
+	public function setEventDateTime($newEventDateTime) {
 
-		// Verify the eventDateTime is secure (and not null)
+		// Verify that eventDateTime is secure (and not null)
 		$newEventDateTime = trim($newEventDateTime);
 		$newEventDateTime = filter_var($newEventDateTime, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 		if(empty($newEventDateTime) === true) {
-			throw(new \InvalidArgumentException("$eventDateTime is empty or insecure"));
+			throw(new \InvalidArgumentException("eventDateTime is empty or insecure"));
 		}
 
 		// Store the eventDateTime
 		try {
-			$newTweetDate = self::validateDateTime($newEventDateTime);
+			$newEventDateTime = self::validateDateTime($newEventDateTime);
 		} catch(\InvalidArgumentException $invalidArgument) {
 			throw(new \InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
 		} catch(\RangeException $range) {
@@ -129,16 +129,16 @@ class Event {
 	 *
 	 * @param string $eventVenue
 	 */
-	public function setEventVenue(string $newEventVenue) {
+	public function setEventVenue($newEventVenue) {
 
-		// Verify the eventVenue is secure
+		// Verify that eventVenue is secure
 		$newEventVenue = trim($newEventVenue);
 		$newEventVenue = filter_var($newEventVenue, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 		if(empty($newEventVenue) === true) {
 			throw(new \InvalidArgumentException("eventVenue is empty or insecure"));
 		}
 
-		// verify the eventVenue will fit in the database
+		// Verify that eventVenue will fit in the database
 		if(strlen($newEventVenue) > 50) {
 			throw(new \RangeException("eventVenue has too many characters in it"));
 		}
@@ -153,16 +153,16 @@ class Event {
 	 *
 	 * @param string $eventDetails
 	 */
-	public function setEventDetails(string $eventDetails) {
+	public function setEventDetails($newEventDetails) {
 
-		// Verify the eventDetails is secure
+		// Verify that eventDetails is secure
 		$newEventDetails = trim($newEventDetails);
 		$newEventDetails = filter_var($newEventDetails, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 		if(empty($newEventDetails) === true) {
 			throw(new \InvalidArgumentException("eventDetails is empty or insecure"));
 		}
 
-		// verify the eventDetails will fit in the database
+		// Verify that eventDetails will fit in the database
 		if(strlen($newEventDetails) > 2000) {
 			throw(new \RangeException("eventDetails has too many characters in it"));
 		}
