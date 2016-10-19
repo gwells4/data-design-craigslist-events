@@ -81,6 +81,77 @@ class Poster {
 	}
 
 
+	/**
+	 * Mutator method for posterName
+	 *
+	 * @param string $newPosterName
+	 */
+	public function setPosterName($newPosterName) {
+
+		// Verify that posterName is secure
+		$newPosterName = trim($newPosterName);
+		$newPosterName = filter_var($newPosterName, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newPosterName) === true) {
+			throw(new \InvalidArgumentException("posterName is empty or insecure"));
+		}
+
+		// Verify that posterName will fit in the database
+		if(strlen($newPosterName) > 256) {
+			throw(new \RangeException("posterName has too many characters in it"));
+		}
+
+		// Store the posterName
+		$this->posterName = $newPosterName;
+
+	}
+
+	/**
+	 * Mutator method for posterEmail
+	 *
+	 * @param string $newPosterEmail
+	 */
+	public function setPosterEmail($newPosterEmail) {
+
+		// Verify that posterEmail is secure
+		$newPosterEmail = trim($newPosterEmail);
+		$newPosterEmail = filter_var($newPosterEmail, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newPosterEmail) === true) {
+			throw(new \InvalidArgumentException("posterEmail is empty or insecure"));
+		}
+
+		// Verify that posterEmail will fit in the database
+		if(strlen($newPosterEmail) > 256) {
+			throw(new \RangeException("posterEmail has too many characters in it"));
+		}
+
+		// Store the posterEmail
+		$this->posterEmail = $newPosterEmail;
+
+	}
+
+	/**
+	 * Mutator method for posterPhone
+	 *
+	 * @param string $newPosterPhone
+	 */
+	public function setPosterPhone($newPosterPhone) {
+
+		// Verify that posterPhone is secure
+		$newPosterPhone = trim($newPosterPhone);
+		$newPosterPhone = filter_var($newPosterPhone, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newPosterPhone) === true) {
+			throw(new \InvalidArgumentException("posterPhone is empty or insecure"));
+		}
+
+		// Verify that posterPhone will fit in the database
+		if(strlen($newPosterPhone) > 32) {
+			throw(new \RangeException("posterPhone has too many characters in it"));
+		}
+
+		// Store the posterPhone
+		$this->posterPhone = $newPosterPhone;
+
+	}
 
 	/**
 	 * Mutator method for posterEventId

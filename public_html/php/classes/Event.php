@@ -75,6 +75,7 @@ class Event {
 		return $this->eventDetails;
 	}
 
+
 	/**
 	 * Mutator method for eventId
 	 *
