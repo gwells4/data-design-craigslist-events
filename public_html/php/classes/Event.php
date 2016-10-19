@@ -91,7 +91,7 @@ class Event {
 		if($newEventId <= 0) {
 			throw(new \RangeException("eventId is not positive"));
 		}
-		// Convert and store the eventId
+		// Store the eventId
 		$this->eventId = $newEventId;
 
 	}
@@ -103,7 +103,7 @@ class Event {
 	 * @throws \InvalidArgumentException if $newTweetDate is not a valid object or string
 	 * @throws \RangeException if $newTweetDate is a date that does not exist
 	 */
-	public function setEventDateTime($newEventDateTime) {
+	public function setEventDateTime(string $newEventDateTime) {
 
 		// Verify the eventDateTime is secure (and not null)
 		$newEventDateTime = trim($newEventDateTime);
@@ -153,7 +153,7 @@ class Event {
 	 *
 	 * @param string $eventDetails
 	 */
-	public function setEventDetails($eventDetails) {
+	public function setEventDetails(string $eventDetails) {
 
 		// Verify the eventDetails is secure
 		$newEventDetails = trim($newEventDetails);

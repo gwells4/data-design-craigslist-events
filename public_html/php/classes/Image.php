@@ -77,5 +77,44 @@ class Image {
 	}
 }
 
+/**
+ * Mutator method for imageId
+ *
+ * @param int|null $imageId
+ */
+public function setImageId(int $newImageId = null) {
+
+	// Base case: if the imageId is null, this is a new Image before mySQL has assigned an Id
+	if($newImageId === null) {
+		$this->imageId = null;
+		return;
+	}
+	// Verify the imageId is positive
+	if($newImageId <= 0) {
+		throw(new \RangeException("imageId is not positive"));
+	}
+	// Store the imageId
+	$this->imageId = $newImageId;
+
+}
+
+/**
+ * Mutator method for imageEventId
+ *
+ * @param int $newImageEventId new value of imageEventId
+ * @throws \RangeException if $newImageEventId is not positive
+ * @throws \TypeError if $newImageEventId is not an integer
+ **/
+public function setImageEventId(int $newImageEventId) {
+
+	// Verify the imageEventId is positive
+	if($newImageEventId <= 0) {
+		throw(new \RangeException("imageEventId is not positive"));
+	}
+
+	// Store the imageEventId
+	$this->imageEventId = $newImageEventId;
+}
+
 
 ?>
