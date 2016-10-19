@@ -44,7 +44,41 @@ class Poster {
 	// CONSTRUCTOR GOES HERE LATER
 
 
+	/**
+	 * Accessor method for posterName
+	 *
+	 * @return string
+	 */
+	public function getPosterName() {
+		return ($this->posterName);
+	}
 
+	/**
+	 * Accessor method for posterEmail
+	 *
+	 * @return string
+	 */
+	public function getPosterEmail() {
+		return ($this->posterEmail);
+	}
+
+	/**
+	 * Accessor method for posterPhone
+	 *
+	 * @return string
+	 */
+	public function getPosterPhone() {
+		return ($this->posterPhone);
+	}
+
+	/**
+	 * Accessor method for posterEventId
+	 *
+	 * @return int
+	 */
+	public function getPosterEventId() {
+		return ($this->posterEventId);
+	}
 }
 
 
