@@ -36,6 +36,45 @@ class Image {
 	 **/
 	private $imagePath;
 
+
+	// CONSTRUCTOR GOES HERE LATER
+
+
+	/**
+	 * Accessor method for imageId
+	 *
+	 * @return int|null
+	 */
+	public function getImageId() {
+		return ($this->imageId);
+	}
+
+	/**
+	 * Accessor method for imageEventId
+	 *
+	 * @return int
+	 */
+	public function getImageEventId() {
+		return ($this->imageEventId);
+	}
+
+	/**
+	 * Accessor method for imageFilename
+	 *
+	 * @return string
+	 */
+	public function getImageFilename() {
+		return ($this->imageFilename);
+	}
+
+	/**
+	 * Accessor method for imagePath
+	 *
+	 * @return string
+	 */
+	public function getImagePath() {
+		return ($this->imagePath);
+	}
 }
 
 

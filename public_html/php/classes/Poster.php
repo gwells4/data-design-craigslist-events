@@ -40,6 +40,11 @@ class Poster {
 	 **/
 	private $posterEventId;
 
+
+	// CONSTRUCTOR GOES HERE LATER
+
+
+
 }
 
 

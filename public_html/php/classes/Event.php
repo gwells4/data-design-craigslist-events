@@ -38,6 +38,7 @@ class Event {
 
 	// CONSTRUCTOR GOES HERE LATER
 
+
 	/**
 	 * Accessor method for eventId
 	 *
