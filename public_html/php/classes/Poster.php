@@ -79,7 +79,26 @@ class Poster {
 	public function getPosterEventId() {
 		return $this->posterEventId;
 	}
+
+
+
+	/**
+	 * Mutator method for posterEventId
+	 *
+	 * @param int $newPosterEventId new value of posterEventId
+	 * @throws \RangeException if $newPosterEventId is not positive
+	 * @throws \TypeError if $newPosterEventId is not an integer
+	 **/
+	public function setPosterEventId($newPosterEventId) {
+
+		// Verify that posterEventId is positive
+		if($newPosterEventId <= 0) {
+			throw(new \RangeException("posterEventId is not positive"));
+		}
+
+		// Store the posterEventId
+		$this->posterEventId = $newPosterEventId;
+	}
+
 }
-
-
 ?>
