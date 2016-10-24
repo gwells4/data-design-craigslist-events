@@ -240,7 +240,7 @@ class Event {
 	}
 
 
-$testEvent= new Event()
+$testEvent= new Event(null,"2016-10-24","Convention Center","Fun","Come to our event!");
 
 
 
