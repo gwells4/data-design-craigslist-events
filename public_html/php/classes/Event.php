@@ -157,6 +157,30 @@ class Event {
 	}
 
 	/**
+	 * Mutator method for eventCategory
+	 *
+	 * @param string $eventCategory
+	 */
+	public function setEventCategory($newEventCategory) {
+
+		// Verify that eventCategory is secure
+		$newEventCategory = trim($newEventCategory);
+		$newEventCategory = filter_var($newEventCategory, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newEventCategory) === true) {
+			throw(new \InvalidArgumentException("eventCategory is empty or insecure"));
+		}
+
+		// Verify that eventCategory will fit in the database
+		if(strlen($newEventCategory) > 30) {
+			throw(new \RangeException("eventCategory has too many characters in it"));
+		}
+
+		// Store the eventCategory
+		$this->eventCategory = $newEventCategory;
+
+	}
+
+	/**
 	 * Mutator method for eventDetails
 	 *
 	 * @param string $eventDetails
