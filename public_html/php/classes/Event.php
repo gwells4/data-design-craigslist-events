@@ -29,6 +29,12 @@ class Event {
 	 **/
 	private $eventVenue;
 	/**
+	 * The Category for this Event.
+	 *
+	 * @var string $eventCategory
+	 **/
+	private $eventCategory;
+	/**
 	 * The Details of this Event.
 	 *
 	 * @var string $eventDetails
