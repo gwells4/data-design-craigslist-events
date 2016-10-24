@@ -119,13 +119,6 @@ class Event {
 		}
 
 		// Store the eventDateTime
-		try {
-			$newEventDateTime = self::validateDateTime($newEventDateTime);
-		} catch(\InvalidArgumentException $invalidArgument) {
-			throw(new \InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
-		} catch(\RangeException $range) {
-			throw(new \RangeException($range->getMessage(), 0, $range));
-		}
 		$this->eventDateTime = $newEventDateTime;
 
 	}
