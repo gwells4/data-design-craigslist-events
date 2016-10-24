@@ -175,11 +175,11 @@ class Event {
 	/**
 	 * constructor for the Event class
 	 *
-	 * @param int|null $newEventId
-	 * @param string $newEventDateTime
-	 * @param string $newEventVenue
-	 * @param string $newEventCategory
-	 * @param string $newEventDetails
+	 * @param int|null $newEventId the Id of the Event (null if new Event since it is assigned by MySQL)
+	 * @param string $newEventDateTime the Date and TIme of the Event
+	 * @param string $newEventVenue the Venue of the Event
+	 * @param string $newEventCategory the Category of the Event
+	 * @param string $newEventDetails the Details of the Event
 	 **/
 	public function __construct($newEventId = null, $newEventDateTime, $newEventVenue, $newEventCategory, $newEventDetails) {
 		try {
