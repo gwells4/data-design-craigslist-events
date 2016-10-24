@@ -67,6 +67,15 @@ class Event {
 	}
 
 	/**
+	 * Accessor method for eventCategory
+	 *
+	 * @return string
+	 */
+	public function getEventCategory() {
+		return $this->eventCategory;
+	}
+
+	/**
 	 * Accessor method for eventDetails
 	 *
 	 * @return string
@@ -207,7 +216,7 @@ class Event {
 	}
 
 
-
+$testEvent= new Event()
 
 
 
