@@ -221,17 +221,22 @@ class Event {
 	 * @param string $newEventDetails the Details of the Event
 	 **/
 	public function __construct($newEventId = null, $newEventDateTime, $newEventVenue, $newEventCategory, $newEventDetails) {
-		try {
+
 			$this->setEventId($newEventId);
 			$this->setEventDateTime($newEventDateTime);
 			$this->setEventVenue($newEventVenue);
 			$this->setEventCategory($newEventCategory);
 			$this->setEventDetails($newEventDetails);
+
+			/*
+		try {
+			$this->setTweetId($newTweetId);
+			$this->setTweetProfileId($newTweetProfileId);
+			$this->setTweetContent($newTweetContent);
+			$this->setTweetDate($newTweetDate);
 		} catch(\InvalidArgumentException $invalidArgument) {
 			// rethrow the exception to the caller
 			throw(new \InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
-
-			/*
 		} catch(\RangeException $range) {
 			// rethrow the exception to the caller
 			throw(new \RangeException($range->getMessage(), 0, $range));
@@ -246,7 +251,7 @@ class Event {
 	}
 
 
-$testEvent= new Event(null,"2016-10-24","Convention Center","Fun","Come to our event!");
+
 
 
 
