@@ -179,6 +179,41 @@ class Event {
 	}
 
 
+	/**
+	 * constructor for the Event class
+	 *
+	 * @param int|null $newEventId
+	 * @param string $newEventDateTime
+	 * @param string $newEventVenue
+	 * @param string $newEventCategory
+	 * @param string $newEventDetails
+	 **/
+	public function __construct($newEventId = null, $newEventDateTime, $newEventVenue, $newEventCategory, $newEventDetails) {
+		try {
+			$this->setEventId($newEventId);
+			$this->setEventDateTime($newEventDateTime);
+			$this->setEventVenue($newEventVenue);
+			$this->setEventCategory($newEventCategory);
+			$this->setEventDetails($newEventDetails);
+		} catch(\InvalidArgumentException $invalidArgument) {
+			// rethrow the exception to the caller
+			throw(new \InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
+		} catch(\RangeException $range) {
+			// rethrow the exception to the caller
+			throw(new \RangeException($range->getMessage(), 0, $range));
+		} catch(\TypeError $typeError) {
+			// rethrow the exception to the caller
+			throw(new \TypeError($typeError->getMessage(), 0, $typeError));
+		} catch(\Exception $exception) {
+			// rethrow the exception to the caller
+			throw(new \Exception($exception->getMessage(), 0, $exception));
+		}
+	}
+
+
+
+
+
 
 }
 ?>
