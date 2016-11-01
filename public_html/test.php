@@ -19,12 +19,13 @@ require_once "aes256.php";
 require_once "encrypted-config.php";
 
 
-$aes_file="aes49.ini";
-$aes_parameters=readConfig($aes_file);
-
-
 $arlo_file="arlo-control-center.ini";
 $arlo_parameters=readConfig($arlo_file);
+
+
+
+$aes_file="aes49.ini";
+$aes_parameters=readConfig($aes_file);
 
 
 
