@@ -13,4 +13,29 @@ print_r($testEvent);
 echo "</pre>";
 //echo "</body>";
 //echo "</html>";
+
+
+require_once "aes256.php";
+require_once "encrypted-config.php";
+
+
+$aes_file="aes49.ini";
+$aes_parameters=readConfig($aes_file);
+
+
+$arlo_file="arlo-control-center.ini";
+$arlo_parameters=readConfig($arlo_file);
+
+
+
+
+$filename=$aes_file;
+//$filename=$arlo_file;
+
+echo "<pre>";
+print_r($filename);
+echo "</pre>";
+
+
+
 ?>
