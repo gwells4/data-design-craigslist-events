@@ -20,8 +20,7 @@ function aes256Encrypt($plaintext, $password) {
     $plaintext = pkcs5Pad($plaintext, $blocksize);
 
     // encrypt the plaintext
-    $ciphertext = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $plaintext, MCRYPT_M
-ODE_CBC, $iv);
+    $ciphertext = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $plaintext, MCRYPT_MODE_CBC, $iv);
     $ciphertext = $iv . $ciphertext;
     return(base64_encode($ciphertext));
 }
@@ -47,12 +46,10 @@ function aes256Decrypt($ciphertext, $password) {
 
     // unpad the plaintext before returning it
     try {
-        $plaintext = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key, $rawCiphertext, M
-CRYPT_MODE_CBC, $rawIv);
+        $plaintext = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key, $rawCiphertext, MCRYPT_MODE_CBC, $rawIv);
         $plaintext = pkcs5Unpad($plaintext);
     } catch(InvalidArgumentException $invalidArgument) {
-        throw(new InvalidArgumentException($invalidArgument->getMessage(), 0, $i
-nvalidArgument));
+        throw(new InvalidArgumentException($invalidArgument->getMessage(), 0, $invalidArgument));
     }
     return($plaintext);
 }
