@@ -11,14 +11,12 @@ require_once("aes256.php");
 function readConfig($filename) {
     // verify the file is readable
     if(is_readable($filename) === false) {
-        throw(new InvalidArgumentException("configuration file is not readable")
-);
+        throw(new InvalidArgumentException("configuration file is not readable"));
     }
 
     // read the encrypted config file
     if(($ciphertext = file_get_contents($filename)) == false) {
-        throw(new InvalidArgumentException("unable to read configuration file"))
-;
+        throw(new InvalidArgumentException("unable to read configuration file"));
     }
 
     // decrypt the file
@@ -26,8 +24,7 @@ function readConfig($filename) {
         $password = strrev($filename) . strlen($filename);
         $plaintext = aes256Decrypt($ciphertext, $password);
     } catch(InvalidArgumentException $invalidArgument) {
-        throw(new InvalidArgumentException($invalidArgument->getMessage(), 0 , $
-invalidArgument));
+        throw(new InvalidArgumentException($invalidArgument->getMessage(), 0 , $invalidArgument));
     }
 
     // parse the parameters and return them
@@ -42,8 +39,7 @@ invalidArgument));
  *
  * @param array $parameters configuration parameters to write
  * @param string $filename filename to write to
- * @throws InvalidArgumentException if the parameters are invalid or the file ca
-nnot be accessed
+ * @throws InvalidArgumentException if the parameters are invalid or the file cannot be accessed
  **/
 function writeConfig($parameters, $filename) {
     // verify the parameters are an array
@@ -53,8 +49,7 @@ function writeConfig($parameters, $filename) {
 
     // verify the file name is writable
     if(is_writable($filename) === false) {
-        throw(new InvalidArgumentException("configuration file is not writable")
-);
+        throw(new InvalidArgumentException("configuration file is not writable"));
     }
 
     // build the plaintext to encrypt
@@ -85,8 +80,7 @@ function writeConfig($parameters, $filename) {
 
     // open the config file and write the cipher text
     if(file_put_contents($filename, $ciphertext) === false) {
-        throw(new InvalidArgumentException("unable to write configuration file")
-);
+        throw(new InvalidArgumentException("unable to write configuration file"));
     }
 }
 
@@ -99,13 +93,11 @@ function writeConfig($parameters, $filename) {
 function connectToEncryptedMySQL($filename) {
         // grab the encrypted mySQL properties file and create the DSN
         $config = readConfig($filename);
-        $dsn = "mysql:host=" . $config["hostname"] . ";dbname=" . $config["datab
-ase"];
+        $dsn = "mysql:host=" . $config["hostname"] . ";dbname=" . $config["database"];
         $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
 
         // create the PDO interface and return it
-        $pdo = new PDO($dsn, $config["username"], $config["password"], $options)
-;
+        $pdo = new PDO($dsn, $config["username"], $config["password"], $options);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return($pdo);
 }
