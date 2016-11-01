@@ -22,8 +22,8 @@ $aes_file="aes49.ini";
 $arlo_file="arlo-control-center.ini";
 
 
-$filename=$aes_file;
-//$filename=$arlo_file;
+//$filename=$aes_file;
+$filename=$arlo_file;
 
 echo "<pre>";
 print_r($filename);
