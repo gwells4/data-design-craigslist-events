@@ -49,6 +49,12 @@ echo "</pre>";
 // decrypt the file
 try {
 	$password = strrev($filename) . strlen($filename);
+
+	echo "<pre>";
+	print_r($password);
+	echo "</pre>";
+
+
 	$plaintext = aes256Decrypt($ciphertext, $password);
 } catch(InvalidArgumentException $invalidArgument) {
 	throw(new InvalidArgumentException($invalidArgument->getMessage(), 0 , $invalidArgument));
