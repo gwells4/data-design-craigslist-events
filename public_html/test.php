@@ -40,6 +40,12 @@ if(($ciphertext = file_get_contents($filename)) == false) {
 	throw(new InvalidArgumentException("unable to read configuration file"));
 }
 
+
+echo "<pre>";
+print_r($ciphertext);
+echo "</pre>";
+
+
 // decrypt the file
 try {
 	$password = strrev($filename) . strlen($filename);
